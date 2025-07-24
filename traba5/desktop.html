@@ -1,0 +1,71 @@
+<!-- desktop.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Área de Trabalho</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('https://wallpapercave.com/wp/wp4639488.jpg') no-repeat center center;
+      background-image: 100px;
+      background-size: cover;
+      font-family: sans-serif;
+    }
+    .taskbar {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+    .icons {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 40px;
+      left: 20px;
+    }
+    .icon {
+      margin-bottom: 20px;
+      text-align: center;
+      color: white;
+    }
+    .icon img {
+      width: 48px;
+      height: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="icons">
+    <div class="icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888878.png" alt="Este PC">
+      <div function()>Este PC</div>
+    </div>
+    <div class="icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Lixeira">
+      <div>Lixeira</div>
+    </div>
+  </div>
+  
+  <!-- Barra de tarefas -->
+  <div class="taskbar" onclick="irParaBSOD()">
+    <span>Iniciar</span>
+    <span style="margin-left:auto;">22:05</span>
+  </div>
+
+  <script>
+    // Função para redirecionar para a tela BSOD ao clicar em "Iniciar"
+    function irParaBSOD() {
+      window.location.href = "bsdo.html"; // Redireciona para BSOD
+    }
+  </script>
+</body>
+</html>

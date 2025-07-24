@@ -1,0 +1,69 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tela de Login</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('https://wallpaperaccess.com/full/2637581.jpg') no-repeat center center;
+      background-image:  100%;
+      background-size: cover;
+      font-family: sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;  
+    }
+    .login-box {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 250px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #0078D7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <input type="password" id="senha" placeholder="Digite sua senha"><br>
+    <button onclick="logar()">Entrar</button>
+  </div>
+
+  <script>
+    function logar() {
+      // Aqui vamos redirecionar para o BSOD
+      var senha = document.getElementById('senha').value;
+      
+      // Validação simples para exemplo (senha "1234" correta)
+      if(senha === "1234") {
+        window.location.href = "desktop.html"; // Redireciona para o BSOD
+      } 
+    }
+  </script>
+
+</body>
+</html>
